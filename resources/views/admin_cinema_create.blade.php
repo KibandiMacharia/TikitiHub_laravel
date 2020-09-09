@@ -12,9 +12,9 @@
 
     <div class="modal-content">
       <div class="modal-header">
-           <div class="pull-right">
+           <!--<div class="pull-right">
             <a class="btn btn-primary" href="/admin/cinema"> Back</a>
-        </div>
+        </div>--->
         <h4 class="modal-title" >Add Cinema:</h4>
         <button type="button" class="close" data-dismiss="modal">&times;</button>
       </div>

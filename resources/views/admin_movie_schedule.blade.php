@@ -18,8 +18,6 @@
         </div>
     @endif
 
-  
-
       <table id="datatableid" class="table table-bordered table-dark">
         <tr>
                              <th scope="col">ID</th>
@@ -28,8 +26,6 @@
                             <th scope="col">Date</th>
                             <th scope="col">Time</th>
                             <th scope="col">Ticket Cost</th>
-                          
-
         </tr>
          @if(count($schedule) > 0)
         @foreach($schedule->all() as $schedules)

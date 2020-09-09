@@ -10,9 +10,9 @@
         <div class="pull-left">
             <h2>Add Movie</h2>
         </div>
-        <div class="pull-right">
+        <!--<div class="pull-right">
             <a class="btn btn-primary" href="/admin/movieinfo"> Back</a>
-        </div>
+        </div>-->
     </div>
 </div>
    

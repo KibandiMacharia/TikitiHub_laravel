@@ -10,7 +10,7 @@ class MovieController extends Controller
 {
        public function home(){
             $movie = Movie::all();
-            return view('pages.admin.admin_movieinfo',['movie' => $movie]);
+            return view('admin_movieinfo',['movie' => $movie]);
           }
 
 
@@ -42,8 +42,6 @@ class MovieController extends Controller
                 $path = $request->file('movie_poster')->storeAs('public/movie_poster',$fileNameToStore);
 
             }else{
-
-
                 $fileNameToStore = 'noimage.jpeg'; 
             }
 

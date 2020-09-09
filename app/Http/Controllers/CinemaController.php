@@ -11,21 +11,21 @@ class CinemaController extends Controller
     
     public function home(){
             $cinemas = Cinemas::all();
-            return view('pages.admin.admin_cinema',['cinemas' => $cinemas]);
+            return view('admin_cinema',['cinemas' => $cinemas]);
           }
 
 
     public function index(){
 
        $cinemas = Cinemas::latest()->paginate(5);
-        return view('pages.admin.admin_cinema',compact('cinemas'))
+        return view('admin_cinema',compact('cinemas'))
             ->with('i', (request()->input('page', 1) - 1) * 5);
     }
 
 
     public function create()
     {
-         return view('pages.admin.admin_cinema');
+         return view('admin_cinema');
     }
 
     /**

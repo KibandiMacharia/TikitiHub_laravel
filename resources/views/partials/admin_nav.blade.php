@@ -1,14 +1,16 @@
 <script src="bootstrap/js/bootstrap.js"></script>
 <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
 
 <!-- Sidebar -->
+
+<div id="sidebar">
 <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
 
     <!-- Sidebar - Brand -->
-    <a class="sidebar-brand d-flex align-items-center justify-content-center" href="users">
+    <a class="sidebar-brand d-flex align-items-center justify-content-center" href="/users">
         <div class="sidebar-brand-icon rotate-n-15">
-            <i class="fas fa-home"></i>
-            
+            <i class="fas fa-ticket-alt fa-5x" aria-hidden="true"></i>
         </div>
         <div class="sidebar-brand-text mx-3">TikitiHub </div>
     </a>
@@ -18,7 +20,7 @@
 
     <!-- Nav Item - Dashboard -->
     <li class="nav-item active">
-        <a class="nav-link" href="/admin">
+        <a class="nav-link" href="/users">
             <i class="fas fa-fw fa-tachometer-alt"></i>
             <span>Dashboard</span></a>
     </li>
@@ -35,15 +37,14 @@
     <li class="nav-item">
         <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true"
             aria-controls="collapseTwo">
-            <i class="fas fa-fw fa-building"></i>
-            <span>Listings</span>
+            <i class="fa fa-film"></i>
+            <span>Movies</span>
         </a>
         <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
             <div class="bg-white py-2 collapse-inner rounded">
                 <h6 class="collapse-header">Actions</h6>
-                <a class="collapse-item" href="/admin/listings">View all</a>
-                <a class="collapse-item" href="/admin/listings/create">Create</a>
-                <a class="collapse-item" href="/admin/listings/featured">Featured listings</a>
+                <a class="collapse-item" href="/admin/movieinfo">View all</a>
+                <a class="collapse-item" href="/admin/movieinfo/create">Create</a>
             </div>
         </div>
     </li>
@@ -52,14 +53,14 @@
     <li class="nav-item">
         <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities"
             aria-expanded="true" aria-controls="collapseUtilities">
-            <i class="fas fa-fw fa-user-circle"></i>
-            <span>Agents</span>
+            <i class="fas fa-video"></i>
+            <span>Cinemas</span>
         </a>
         <div id="collapseUtilities" class="collapse" aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
             <div class="bg-white py-2 collapse-inner rounded">
                 <h6 class="collapse-header">Actions</h6>
-                <a class="collapse-item" href="/admin/agents">View all agents</a>
-                <a class="collapse-item" href="/admin/agents/create">Add agent</a>
+                <a class="collapse-item" href="/admin/cinema">View all Cinemas</a>
+                <a class="collapse-item" href="/admin/cinema/create">Add Cinema</a>
             </div>
         </div>
     </li>
@@ -67,37 +68,11 @@
     <!-- Divider -->
     <hr class="sidebar-divider">
 
-    <!-- Nav Item - Charts -->
-    <li class="nav-item">
-        <a class="nav-link" href="/admin/reports">
-            <i class="fas fa-fw fa-chart-area"></i>
-            <span>Reports</span></a>
-    </li>
-
-    <!-- Nav Item - Pages Collapse Menu -->
-    <li class="nav-item">
-        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePages" aria-expanded="true"
-            aria-controls="collapsePages">
-            <i class="fas fa-fw fa-rss"></i>
-            <span>Blog</span>
-        </a>
-        <div id="collapsePages" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
-            <div class="bg-white py-2 collapse-inner rounded">
-                <h6 class="collapse-header">Actions</h6>
-                <a class="collapse-item" href="/admin/blog">View articles</a>
-                <a class="collapse-item" href="/admin/blog/create">Add article</a>
-            </div>
-        </div>
-    </li>
-
-
-    <!-- Divider -->
-    <hr class="sidebar-divider d-none d-md-block">
-
     <!-- Sidebar Toggler (Sidebar) -->
     <div class="text-center d-none d-md-inline">
         <button class="rounded-circle border-0" id="sidebarToggle"></button>
     </div>
 
 </ul>
+</div>
 <!-- End of Sidebar -->

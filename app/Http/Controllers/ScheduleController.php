@@ -9,7 +9,7 @@ class ScheduleController extends Controller
 {
     public function home(){
             $schedule = Schedules::all();
-            return view('pages.admin.admin_movie_schedule',['schedule' => $schedule]);
+            return view('admin_movie_schedule',['schedule' => $schedule]);
           }
 
 

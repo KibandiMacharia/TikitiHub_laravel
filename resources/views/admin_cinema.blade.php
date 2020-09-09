@@ -20,14 +20,27 @@
 
   
 
-      <table id="datatableid" class="table table-bordered table-dark">
+    <div class="card-body">
+            <div class="table-responsive">
+                <table class="table table-bordered table-dark id="dataTable" width="100%" cellspacing="0">
+                    <thead>
         <tr>
                              <th scope="col">ID</th>
                             <th scope="col">Cinema Name</th>
                             <th scope="col">Location</th>
                             <th scope="col">Action</th>
 
-        </tr>
+                    </tr>
+                    </thead>
+                    <tfoot>
+                    <tr>
+                             <th scope="col">ID</th>
+                            <th scope="col">Cinema Name</th>
+                            <th scope="col">Location</th>
+                            <th scope="col">Action</th>
+
+                    </tr>
+                    </tfoot>
          @if(count($cinemas) > 0)
         @foreach($cinemas->all() as $cinema)
         <tr>
@@ -46,6 +59,7 @@
         </tr>
         @endforeach
          @endif
+         </tbody>
     </table>
   
     
