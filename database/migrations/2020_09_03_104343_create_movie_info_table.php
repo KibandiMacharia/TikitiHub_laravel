@@ -19,7 +19,7 @@ class CreateMovieInfoTable extends Migration
             $table->string('movie_cast');
             $table->string('movie_genre');
             $table->text('movie_description');
-            $table->string('movie_poster');
+            $table->binary('movie_poster');
             $table->string('url');
             $table->integer('release_year');
             $table->string('language');

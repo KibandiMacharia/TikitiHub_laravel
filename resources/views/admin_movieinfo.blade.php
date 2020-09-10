@@ -27,29 +27,29 @@
                 <table class="table table-bordered table-dark id="dataTable" width="100%" cellspacing="0">
                     <thead>
                         <tr>
-                            <th scope="col">ID</th>
-                            <th scope="col">Movie Title</th>
-                            <th scope="col">Cast</th>
-                            <th scope="col">Genre</th>
-                            <th scope="col">Movie Description</th>
-                            <th scope="col">Poster</th>
-                            <th scope="col">Trailer</th>
-                            <th scope="col">Release Year</th>
-                            <th scope="col">Language</th>
+                            <th>ID</th>
+                            <th>Movie Title</th>
+                            <th>Cast</th>
+                            <th>Genre</th>
+                            <th>Movie Description</th>
+                            <th>Poster</th>
+                            <th>Trailer</th>
+                            <th>Release Year</th>
+                            <th>Language</th>
                             <th>Actions</th>
                         </tr>
                     </thead>
                     <tfoot>
                         <tr>
-                            <th scope="col">ID</th>
-                            <th scope="col">Movie Title</th>
-                            <th scope="col">Cast</th>
-                            <th scope="col">Genre</th>
-                            <th scope="col">Movie Description</th>
-                            <th scope="col">Poster</th>
-                            <th scope="col">Trailer</th>
-                            <th scope="col">Release Year</th>
-                            <th scope="col">Language</th>
+                            <th>ID</th>
+                            <th>Movie Title</th>
+                            <th>Cast</th>
+                            <th>Genre</th>
+                            <th>Movie Description</th>
+                            <th>Poster</th>
+                            <th>Trailer</th>
+                            <th>Release Year</th>
+                            <th>Language</th>
                             <th>Actions</th>
                         </tr>
                     </tfoot>
@@ -70,8 +70,9 @@
                 <form action="{{ route('movie.destroy',$movies->movie_id) }}" method="POST">   
                     @csrf
                     @method('DELETE')
-                    <button type="submit" class="btn btn-danger">Delete</button>
+                    <button type="submit" class="btn btn-warning">Delete</button>
                 </form>
+                <!--<a href = 'edit/{{ $movies->movie_id }}'>Edit</a>-->
             </td>
         </tr>
         @endforeach

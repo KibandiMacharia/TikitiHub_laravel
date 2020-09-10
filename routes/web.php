@@ -62,3 +62,8 @@ Route::get('delete/{id}','usersController@destroy');
 Route::get('edit-records','usersController@index');
 Route::get('edit/{id}','usersController@show');
 Route::post('edit/{id}','usersController@edit');
+
+//edit movie info
+Route::get('edit-records','MovieController@index');
+Route::get('edit/{id}','MovieController@show');
+Route::post('edit/{id}','MovieController@edit');

@@ -46,9 +46,17 @@
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="form-group">
                       <label for="">Movie Genre</label>
-                      <input type="text"  class="form-control" name="movie_genre"  placeholder="e.g Actiion Thriller" required="true">
+                      <input type="text"  class="form-control" name="movie_genre"  placeholder="e.g Action Thriller" required="true">
                   </div>
         </div>
+
+        <!--<div class="col-xs-12 col-sm-12 col-md-12">
+                <div class="form-group">
+                      <label for="">Running time(Minutes)</label>
+                      <input type="int"  class="form-control" name="running_time"   placeholder="e.g 96" required="true">
+                  </div>
+        </div>
+        -->
 
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="form-group">
@@ -64,7 +72,7 @@
                   </div>
         </div>
         
-           <div class="col-xs-12 col-sm-12 col-md-12">
+        <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="form-group">
                       <label for="">Movie trailer</label>
                       <input type="url"  class="form-control" name="url"   required="true">
@@ -74,14 +82,14 @@
         <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group">
                 <strong>Description:</strong>
-                <textarea class="form-control" style="height:280px" name="movie_description" placeholder=" Movie Description"></textarea>
+                <textarea class="form-control" style="height:280px" name="movie_description" placeholder="Movie Description"></textarea>
             </div>
         </div>
 
                   <div class="form-group">
                     <div class="custom-file">
-                        <input type="file"  name="movie_poster" class="custom-file-input">
-                      <label class="custom-file-label">Choose file</label>
+                        <label for="movie_poster">Choose Image</label>
+                        <input id="movie_poster" type="file" name="movie_poster">
                   </div>
               </div>
 
