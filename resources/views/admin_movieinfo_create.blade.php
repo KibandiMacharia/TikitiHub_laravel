@@ -88,8 +88,15 @@
 
                   <div class="form-group">
                     <div class="custom-file">
-                        <label for="movie_poster">Choose Image</label>
+                        <label for="movie_poster">Choose Movie Poster</label>
                         <input id="movie_poster" type="file" name="movie_poster">
+                  </div>
+              </div>
+
+              <div class="form-group">
+                    <div class="custom-file">
+                        <label for="cover_image">Choose Cover image</label>
+                        <input id="cover_image" type="file" name="cover_image">
                   </div>
               </div>
 
