@@ -43,13 +43,13 @@ class MovieController extends Controller
             $imagePath=$request->file('movie_poster');
             $imageName=time().'.'.$imagePath->getClientOriginalExtension();
 
-            $imagePath->move('uploads',$imageName);
+            $imagePath->move('posters',$imageName);
             $input['movie_poster']=$imageName;
 
             $coverimagePath=$request->file('cover_image');
             $coverimageName=time().'.'.$coverimagePath->getClientOriginalExtension();
 
-            $coverimagePath->move('uploads',$coverimageName);
+            $coverimagePath->move('cover_images',$coverimageName);
             $input['cover_image']=$coverimageName;
 
             Movie::create($input);
