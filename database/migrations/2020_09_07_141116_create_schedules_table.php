@@ -14,12 +14,13 @@ class CreateSchedulesTable extends Migration
     public function up()
     {
         Schema::create('schedules', function (Blueprint $table) {
-              $table->bigIncrements('id');
-            $table->string('movie_title');
-          $table->string('cinema_name');
-          $table->date('date');
-           $table->time("time");
-           $table->integer('ticket_cost');
+        $table->bigIncrements('id');
+        $table->string('movie_title');
+        $table->string('cinema_name');
+        $table->integer('user_id');
+        $table->string('date');
+        $table->string("time");
+        $table->float('ticket_cost');
         });
     }
 
